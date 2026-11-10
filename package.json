@@ -1,0 +1,32 @@
+{
+  "name": "llm-vram-calc",
+  "version": "1.0.0",
+  "description": "Zero-dependency CLI & ESM library for exact LLM GPU VRAM sizing (Weights, KV Cache, GQA vs DeepSeek MLA 576-dim compression, FlashAttention activations, and hardware matching).",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "bin": {
+    "llm-vram-calc": "./cli.mjs"
+  },
+  "scripts": {
+    "test": "node ./cli.mjs --model qwen-3-32b --quant q4_k_m --context 32768"
+  },
+  "keywords": [
+    "llm",
+    "vram",
+    "gpu",
+    "kv-cache",
+    "deepseek",
+    "mla",
+    "gqa",
+    "local-llm",
+    "rtx-5090",
+    "quantization"
+  ],
+  "homepage": "https://global-utils.com/en/gpu-vram-calculator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JangYS0/llm-vram-calc.git"
+  },
+  "license": "MIT"
+}
